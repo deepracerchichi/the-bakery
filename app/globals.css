@@ -1,0 +1,10 @@
+@import "tailwindcss";
+
+
+@theme {
+ --color-brand-pink: #f1d4e0 ;
+ --color-brand-maroon: #5c0a24;
+ --color-brand-cream: #fdf6f0;
+ --font-heading: var(--font-bricolage);
+ --font-body: var(--font-dm-sans);
+}
