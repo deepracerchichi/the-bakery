@@ -13,7 +13,7 @@ const dmsans = DM_Sans({
 });
 
 export const metadata: Metadata = {
-  title: "Nene's Interlude",
+  title: "The Bakery",
   description: "Scrumptious cookies, locally made with love.",
 };
 
