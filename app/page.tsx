@@ -1,7 +1,8 @@
 import CardGrid from "@/src/components/CardGrid";
 import Hero from "@/src/components/Hero";
 import Nav from "@/src/components/Nav";
-import Image from "next/image";
+import Testimonials from "@/src/components/Testimonials";
+
 
 export default function Home() {
   return (
@@ -11,6 +12,7 @@ export default function Home() {
         <Hero />
       </div>
       <CardGrid />
+      <Testimonials />
     </>
     
     
