@@ -9,7 +9,6 @@ export default function Home() {
       <div className=" bg-brand-pink py-10 px-16">
         <Nav />
         <Hero />
-      
       </div>
       <CardGrid />
     </>

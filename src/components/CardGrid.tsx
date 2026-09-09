@@ -13,14 +13,19 @@ const CardGrid = () => {
                 <Image src="/opt1.png" alt="Scrumptious cookies" fill sizes="(max-width: 768px) 100vw, 33vw"  className="object-cover rounded-2xl" />
                 <button 
                     className="font-body absolute bottom-4 left-1/2 
-                        transform -translate-x-1/2 bg-brand-cream 
+                        transform -translate-x-1/2 bg-white
                         text-brand-maroon font-bold py-2 px-4 rounded-full 
-                        hover:bg-brand-pink transition-colors"
+                        hover:bg-brand-pink transition-colors
+                        [box-shadow:4px_6px_0_var(--color-brand-maroon)]"
                         >
                             Have a Taste!
                         </button>
             </div>
-            <h3 className="font-body font-bold text-brand-maroon text-xl text-center mt-4">Lemon flavoured cookies</h3>
+            <h3 
+                className="font-heading font-bold text-brand-maroon text-2xl text-center mt-4"
+                >
+                    Fudgy
+                    </h3>
             </div>
         </div>
     </section>
