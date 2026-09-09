@@ -7,8 +7,8 @@ const Hero = () => {
     <header className="my-6 relative w-full h-75 sm:h-100 md:h-125">
         
        
-        <Image src="/opt1.jpeg" alt="Scrumptious cookies" fill sizes="100vw" className="object-cover rounded-2xl" />
-         <div className="absolute inset-0 bg-black/20 rounded-2xl" />
+        <Image src="/opt1.png" alt="Scrumptious cookies" fill sizes="100vw" className="object-cover rounded-2xl" />
+         <div className="absolute inset-0 bg-black/10 rounded-2xl" />
         <h1 
             className="absolute inset-0 flex items-center 
                 justify-center text-center text-white font-heading 
