@@ -8,7 +8,7 @@ const Nav = () => {
         <div className= "flex justify-between items-center">
             <MenuIcon className="text-brand-pink" size={30} />
             <h2 className="text-center text-brand-cream font-bold font-heading text-2xl">
-                Nene&apos;s Interlude
+                The Bakery
             </h2>
 
             <div className="w-7.5"/>

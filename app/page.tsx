@@ -1,4 +1,5 @@
 import CardGrid from "@/src/components/CardGrid";
+import Footer from "@/src/components/Footer";
 import Hero from "@/src/components/Hero";
 import Nav from "@/src/components/Nav";
 import Testimonials from "@/src/components/Testimonials";
@@ -13,6 +14,7 @@ export default function Home() {
       </div>
       <CardGrid />
       <Testimonials />
+      <Footer />
     </>
     
     
