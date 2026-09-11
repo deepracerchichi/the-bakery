@@ -9,7 +9,7 @@ const Footer = () => {
         <ArrowUp />
       </button>
 
-      <div className="grid grid-cols-1 md:grid-cols-2 gap-12 lg:gap-90 max-w-md">
+      <div className="grid grid-cols-1 md:grid-cols-2 gap-12 md:gap-32">
         <div className='border-l border-brand-maroon/30 pl-6'>
           <p className="text-xs tracking-widest uppercase text-brand-maroon">Navigate</p>
           <ul className="mt-4 space-y-2">
