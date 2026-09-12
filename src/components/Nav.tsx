@@ -23,9 +23,9 @@ const Nav = () => {
   }, {scope: containerRef})
 
   return (
-    <nav ref={containerRef} className="bg-brand-maroon max-w-full py-5 px-10 rounded-2xl">
+    <nav ref={containerRef} className=" bg-brand-maroon max-w-full py-5 px-10 rounded-2xl">
         <div className= "fade-down flex justify-between items-center">
-            <MenuIcon className="text-brand-pink" size={30} />
+            <MenuIcon className=" text-brand-pink" size={30} />
             <h2 className="text-center text-brand-cream font-bold font-heading text-2xl">
                 The Bakery
             </h2>
