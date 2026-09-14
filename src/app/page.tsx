@@ -2,6 +2,7 @@ import CardGrid from "@/components/CardGrid";
 import Footer from "@/components/Footer";
 import Hero from "@/components/Hero";
 import Nav from "@/components/Nav";
+import RichTextEditor from "@/components/RichTextEditor";
 import Testimonials from "@/components/Testimonials";
 
 
@@ -15,6 +16,7 @@ export default function Home() {
       <CardGrid />
       <Testimonials />
       <Footer />
+      
     </>
     
     

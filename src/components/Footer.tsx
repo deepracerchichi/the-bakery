@@ -5,6 +5,7 @@ import gsap from 'gsap';
 import { useGSAP } from '@gsap/react';
 import { SplitText } from 'gsap/SplitText';
 import { ScrollTrigger } from 'gsap/ScrollTrigger';
+import RichTextEditor from './RichTextEditor';
 
 gsap.registerPlugin(ScrollTrigger, SplitText)
 
@@ -57,6 +58,7 @@ const Footer = () => {
       <h2 className="fade-up font-heading font-bold text-brand-maroon leading-none text-[16vw] mt-4">
         The Bakery
       </h2>
+      <RichTextEditor content="<p>Hello world</p>" onChange={(html) => console.log(html)} />
     </footer>
   );
 };

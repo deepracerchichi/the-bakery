@@ -38,7 +38,7 @@ const Hero = () => {
             data-hero-headline
             className="text-center text-white font-heading font-bold text-3xl sm:text-5xl md:text-6xl lg:text-9xl [text-shadow:6px_6px_0_var(--color-brand-maroon)]"
           >
-            Scrumptious cookies, locally made with love!
+            Thoughts, baked slow and served warm.
           </h1>
         </div>
     </header>
