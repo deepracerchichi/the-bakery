@@ -35,6 +35,12 @@ export default async function DashboardPage() {
                 </p>
             </div>
             <DeletePostButton postId={post._id.toString()} />
+            <Link
+              href={`/admin/edit/${post._id.toString()}`}
+              className="text-brand-maroon text-sm font-bold hover:underline"
+            >
+              Edit
+            </Link>
             </div>
           ))}
         </div>

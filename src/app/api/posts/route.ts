@@ -1,24 +1,7 @@
 import dbConnect from "@/lib/mongodb";
 import Post from "@/lib/models/Posts";
 import { NextRequest, NextResponse } from "next/server";
-import crypto from "crypto";
-
-const ADMIN_PASSWORD = process.env.ADMIN_PASSWORD;
-const SESSION_SECRET = process.env.SESSION_SECRET;
-
-function isAuthenticated(request: NextRequest): boolean {
-  if (!ADMIN_PASSWORD || !SESSION_SECRET) return false;
-
-  const sessionCookie = request.cookies.get("admin_session")?.value;
-  if (!sessionCookie) return false;
-
-  const expectedToken = crypto
-    .createHash("sha256")
-    .update(ADMIN_PASSWORD + SESSION_SECRET)
-    .digest("hex");
-
-  return sessionCookie === expectedToken;
-}
+import { isAuthenticated } from "@/lib/auth";
 
 export async function POST(request: NextRequest) {
   if (!isAuthenticated(request)) {
