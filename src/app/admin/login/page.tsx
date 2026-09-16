@@ -16,7 +16,7 @@ export default function LoginPage() {
 
         try {
             await api.post("/login", {username, password});
-            router.push("/admin/new-post");
+            router.push("/admin/dashboard");
         } catch (error) {
             setError(error instanceof Error ? error.message : "Login failed");
         }

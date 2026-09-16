@@ -1,6 +1,7 @@
 import dbConnect from "@/lib/mongodb";
 import Post from "@/lib/models/Posts";
 import Link from "next/link";
+import DeletePostButton from "@/components/DeletePostButton";
 
 export default async function DashboardPage() {
   await dbConnect();
@@ -25,15 +26,16 @@ export default async function DashboardPage() {
           )}
           {posts.map((post) => (
             <div
-              key={post._id.toString()}
-              className="bg-white rounded-lg p-4 flex justify-between items-center"
+            key={post._id.toString()}
+            className="bg-white rounded-lg p-4 flex justify-between items-center"
             >
-              <div>
+            <div>
                 <h2 className="font-heading font-bold text-brand-maroon">{post.title}</h2>
                 <p className="text-sm text-brand-maroon/60">
-                  {new Date(post.createdAt).toLocaleDateString()}
+                {new Date(post.createdAt).toLocaleDateString()}
                 </p>
-              </div>
+            </div>
+            <DeletePostButton postId={post._id.toString()} />
             </div>
           ))}
         </div>
